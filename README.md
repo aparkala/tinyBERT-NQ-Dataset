@@ -16,7 +16,7 @@ Note: .gz files are compressed training and validations samples. We did not incl
       train_syn_0-10_record -> compressed training feature vectors (from 60k training samples augmented to 90k with synonym replacement)
 
 **WARNING** This code requires TensorFlow 1, it is not compatible with TensorFlow 2. 
-We used TensorFlow 1.14 specifically but should be compatible with older versions of TensorFlow 1 as well framework.
+We used TensorFlow 1.14 specifically but should be compatible with older versions of TensorFlow 1 as well.
 
 **********************************************************************************************************************************
 How to build predictions file:
@@ -58,11 +58,9 @@ How to build training record from scratch:
 ~ In both demo folders, there is a file called ‘train_***_record’. 
 ~ This record contains the feature vectors that BERT uses to train. 
 ~ This record is built from the training .gz files. In order to build this from scratch, follow the steps below
-	1. Using extract_train_set.py, specify how many .gz files you want to compress into one using the num_train variable. 
-	   This script will load each .gz file and compress them into a master .gz file that can be used to generate the record
- 	2. Once the master .gz file has been created, run prepare_nq_data.py. 
-	   Change the “input_jsonl” flag to the name of the master .gz file and change the “output_tfrecord” flag to the name of the record you want to create
-	3. Run prepare_nq_data.py 
+1. Using extract_train_set.py, specify how many .gz files you want to compress into one using the num_train variable. This script will load each .gz file and compress them into a master .gz file that can be used to generate the record
+2. Once the master .gz file has been created, run prepare_nq_data.py. Change the “input_jsonl” flag to the name of the master .gz file and change the “output_tfrecord” flag to the name of the record you want to create
+3. Run prepare_nq_data.py 
 
 ***********************************************************************************************************
 Reference Websites
