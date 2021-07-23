@@ -1,10 +1,10 @@
 # tinyBERT-NQ-Dataset
 
-Folders
-	demo_60k - BERT model fine-tuned on 60k training examples
-	demo_syn - BERT model fine-tuned on 90k training examples (60k original, 30k synonym replacement)
-	build_training_record - Contains code to build a training record
-	build_training_record_syn - Contains code to build a training record w/ synonym replacement
+Files
+	1. demo_60k - BERT model fine-tuned on 60k training examples
+	2. demo_syn - BERT model fine-tuned on 90k training examples (60k original, 30k synonym replacement)
+	3. build_training_record - Contains code to build a training record
+	4. build_training_record_syn - Contains code to build a training record w/ synonym replacement
 
 Note: .gz files are compressed training and validations samples. We did not include all of them (too large) but include
       a small set for demo purposes
